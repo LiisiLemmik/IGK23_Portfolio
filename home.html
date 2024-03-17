@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="Scripts.js"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <section class="header">
+        
+    </section>
+    <!-- <header> 
+        
+        <div class="logo">
+            <a href="home.html#Home"> 
+                <img src="New signature copy.png" alt="Logo" width="70" height="70"> 
+            </a>
+        </div>
+
+        <div class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></div>
+                    
+        <ul class="navbar">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Contact">Contacts</a></li>
+        </ul>
+
+    </header> -->
+
+    <!-- Home section design -->
+
+    <section class="home" id="Home">
+
+        <div class="bg-image"></div>
+        
+        <div class="bg-text">
+            <h1>Liisi Lemmik</h1>
+            <h2>Graphic designer</h2>
+        </div>
+
+        <div class="btn-box">
+            <a href="#About" class="btn">Resume</a>
+        </div>
+
+    </section>
+
+    <!-- About section design -->
+    <section class="about" id="About">
+
+        <div class="about-img">
+            <img src="emote doodle.png" alt="Image">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+
+            <div class="abt-content">
+
+                <input id="ch" type="checkbox">
+
+                <h2 hidden>Hoi!</h2>
+
+                <p>
+                Hoii!
+                </p>
+
+                <p>
+                My name is Liisi, better known as Pure on the internet. I’m a graphic designer and an independent freelance artist/hobbyist.
+                </p>
+
+                <p>
+                I’ve loved to draw ever since I was little. It started off with little doodles here and there, just because it was fun. The older I got, though, the more passionate I became of art. Whenever I got to draw, it was an incredible escape from the usual. I would be drawing in my sketchbooks, notebooks, random pieces of paper, etc.
+                </p>
+            
+                <p>
+                After quite a few years, I started to wonder how it would feel like to get a tablet of my own and draw on my computer! And on Christmas, I finally got my first tablet. A small Huion tablet.
+                </p>
+
+                <p>
+                -- And man was I excited! --
+                </p>
+
+                <div class="content-more">
+
+                    <p>
+                    I started testing it out in the morning and immediately got the hang of it. I was obsessed - haha 😂. Ever since then, I’ve started doing a lot more digital art in my free time, but will never fully forget the feeling of drawing on paper.
+                    </p>
+
+                    <p>
+                    Along my path, I’ve joined art clubs, took part in events, and even some contests. 
+                    And I will never stop from reaching futher!
+                    </p>
+
+                    <p>
+                    I still have much to learn about art and design, and I can’t wait to bring my ideas to life. 
+                    I hope you’ll all join me on my adventure! 😄
+                    </p>
+
+                    <p>
+                    Thank you to all the incredible people who have supported me over the years and gave me motivation to keep making art. 😄 ❤️
+                    </p>
+
+                    <label for="ch">Show less</label>
+
+                </div>
+                
+                <label for="ch">Read more</label>
+
+            </div>
+
+
+        </div>
+    </section>
+    
+    <!-- Gallery design -->
+
+    <section class="gallery" id="Gallery">
+
+        <div class="slide-container">
+
+            <h1 class="about-title">DIGITAL ART</h1>
+
+            <div class="slider-wrapper">
+
+                <div class="button">
+                
+                    <button class="slide-button materjal-symbols" id="prev-slide"><i class='bx bx-chevron-left'></i></button>
+
+                </div>
+
+                <div class="image-list">
+
+                    <div class="slide-div" id="slide-1">
+
+                        <img src="spy x family fanart.jpg" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-2">
+
+                        <img src="Commission post page 1 copy.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-3">
+                    
+                        <img src="Jayden's commission.jpg" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-4">
+
+                        <img src="Pumpkin fanart copy.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-5">
+                    
+                        <img src="Scrub-chan.jpg" alt="" class="img" id="img">
+
+                    </div>
+
+                </div>
+
+        
+                <div class="button">
+                
+                    <button class="slide-button materjal-symbols" id="next-slide"><i class='bx bx-chevron-right'></i></button>
+    
+                </div>
+
+            </div>
+                
+            <div class="slider-scrollbar">
+
+                <div class="scrollbar-track">
+
+                    <div class="scrollbar-thumb"></div>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="preview-box">
+            <div class="details">
+
+            </div>
+        </div>
+        
+
+        <div class="slide-container">
+
+            <h1 class="about-title">TRADITIONAL ART</h1>
+
+            <div class="slider-wrapper">
+
+                <div class="button">
+                
+                    <button class="slide-button materjal-symbols" id="prev-slide"><i class='bx bx-chevron-left'></i></button>
+
+                </div>
+
+                <div class="image-list">
+
+                    <div class="slide-div" id="slide-1">
+
+                        <img src="väljakutse copy.jpg" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-2">
+
+                        <img src="koeraportree copy.jpg" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-3">
+                    
+                        <img src="portree copy.jpg" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-4">
+
+                        <img src="Joonistus_Lemmik.jpeg" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                </div>
+
+        
+                <div class="button">
+                
+                    <button class="slide-button materjal-symbols" id="next-slide"><i class='bx bx-chevron-right'></i></button>
+    
+                </div>
+
+            </div>
+                
+            <div class="slider-scrollbar">
+
+                <div class="scrollbar-track">
+
+                    <div class="scrollbar-thumb"></div>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="preview-box">
+            <div class="details">
+
+            </div>
+        </div>
+        
+
+        <div class="slide-container">
+
+            <h1 class="about-title">EMOTES</h1>
+
+            <div class="slider-wrapper">
+
+                <div class="button">
+                
+                    <button class="slide-button materjal-symbols" id="prev-slide"><i class='bx bx-chevron-left'></i></button>
+
+                </div>
+
+                <div class="image-list">
+
+                    <div class="slide-div" id="slide-1">
+
+                        <img src="cookie_emote-1.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-2">
+
+                        <img src="pete thumb-up emote.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-3">
+                    
+                        <img src="pete heart emote.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-4">
+
+                        <img src="pete salute emote.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-5">
+                    
+                        <img src="pete holding a knife emote.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-6">
+
+                        <img src="pete gg emote.png" alt="" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-7">
+
+                        <img src="sad emote finished.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-8">
+
+                        <img src="facepalm emote finished.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-9">
+                        
+                        <img src="angry emote finished.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-10">
+
+                        <img src="scared emote finished.png" alt="Image item" class="img" id="img">
+
+                    </div>
+
+                    <div class="slide-div" id="slide-11">
+
+                        <img src="laughing emote finished.png" alt="Image item" class="img" id="img">
+
+                    </div>
+                    
+                </div>
+
+        
+                <div class="button">
+                
+                    <button class="slide-button materjal-symbols" id="next-slide"><i class='bx bx-chevron-right'></i></button>
+    
+                </div>
+
+            </div>
+                
+            <div class="slider-scrollbar">
+
+                <div class="scrollbar-track">
+
+                    <div class="scrollbar-thumb"></div>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="preview-box">
+            <div class="details">
+
+            </div>
+        </div>
+
+        <div class="slide-container">
+
+            <h1 class="about-title">ANIMATIONS</h1>
+
+            <div class="slider-wrapper">
+
+                <div class="button">
+                
+                    <button class="slide-button materjal-symbols" id="prev-slide"><i class='bx bx-chevron-left'></i></button>
+
+                </div>
+
+                <div class="image-list">
+
+                    <div class="slide-div" id="slide-1">
+
+                        <video src="hugo ja päike copy.mp4" width="400" height="300" type="video/mp4"></video>
+
+                    </div>
+
+                    <div class="slide-div" id="slide-2">
+
+                        <video src="boing copy.mp4" width="400" height="300" type="video/mp4"></video>
+
+                    </div>
+
+                </div>
+
+        
+                <div class="button">
+                
+                    <button class="slide-button materjal-symbols" id="next-slide"><i class='bx bx-chevron-right'></i></button>
+    
+                </div>
+
+            </div>
+                
+            <div class="slider-scrollbar">
+
+                <div class="scrollbar-track">
+
+                    <div class="scrollbar-thumb"></div>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="preview-box">
+            <div class="details">
+
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- Contacts/Socials section design -->
+    <section class="contact" id="Contact">
+
+        <div class="socials">
+            <a href="https://www.youtube.com/@purespiritart"><i class='bx bxl-youtube'></i></a>
+            <a href="https://www.instagram.com/purebunnyspirit"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.facebook.com/PBSScribs"><i class='bx bxl-facebook'></i></a>
+        </div>
+
+        <div class="contact-form">
+
+            <h2 class="heading">Contact <span>Me!</span></h2>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                
+                <div class="input-box">
+                    
+                    <input type="hidden" name="access_key" value="5fab1787-f4eb-4b25-84ba-fb57ee42bc2a">
+
+                    <div class="input-field">
+                        <input type="text" placeholder="Full name" name="name" autocomplete="given-name" required>
+                        <span class="focus"></span>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" placeholder="Email Address" name="email" autocomplete="off" required>
+                        <span class="focus"></span>
+                    </div>
+
+                    <div class="input-field input-email">
+                        <input type="text" placeholder="Email Subject" name="subject" autocomplete="off" required>
+                        <span class="focus"></span>
+                    </div>
+
+                    <div class="textarea-field input-message">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" autocomplete="off" required></textarea>
+                        <span class="focus"></span>
+                    </div>
+
+                    <div class="btn-box btns">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- FOOTER DESIGN -->
+
+    <footer class="footer">
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
