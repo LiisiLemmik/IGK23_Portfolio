@@ -17,18 +17,22 @@ html {
     overflow-x: hidden;
 }
 
-header {
+body {
+ overflow-x: auto;
+}
+
+section.header {
     margin: auto;
     position: relative;
-    height: 140px;
-    /* border: 1px solid red; */
+    height: 130px;
+    border: 1px solid red;
     
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: start;
 
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     width: 0;
@@ -96,6 +100,7 @@ section.home, section.about, section.gallery, section.contact {
     padding: 0 9%;
     max-width: 60rem;
     /* border: 1px solid blue; */
+    flex-direction: column;
 }
 
 .bg-image {
@@ -688,11 +693,12 @@ h2 {
         position: absolute;
         top: 100%;
         left: 0;
-        width: 50%;
-        margin-left: 20rem;
+        width: 30%;
+        margin: auto;
         padding: 1rem 4%;
-        background: red;
+        background: darkred;
         box-shadow: 0 .5rem 1rem darkred;
+        flex: auto;
         flex-direction: column;
         align-items: end;
     }
