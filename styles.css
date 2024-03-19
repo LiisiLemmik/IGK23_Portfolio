@@ -17,9 +17,9 @@ html {
     overflow-x: hidden;
 }
 
-body {
+/* body { 
     overflow-x:hidden;
-}
+}*/
 
 section.header {
     margin: auto;
@@ -77,14 +77,44 @@ section.header {
     margin-left: 45rem;
 }
 
+section.Home {
+    position: absolute;
+    height: 460px;
+    border: 1px solid maroon;
+    justify-items: center;
+    margin-top: -270px;
+    z-index: 50;
+}
+
+section.About {
+    position: absolute;
+    height: 460px;
+    margin-top: 660px;
+    border: 1px solid maroon;
+    z-index: 50;
+}
+
+section.Gallery {
+    position: absolute;
+    height: 460px;
+    margin-top: 1712px;
+    border: 1px solid maroon;
+    z-index: 50;
+}
+
+section.Contact {
+    position: absolute;
+    height: 460px;
+    margin-top: 5910px;
+}
+
 section.home, section.about, section.gallery, section.contact {
-    margin: auto;
-    width: 100%;
     position: relative;
     /* padding: 10rem 9% 2rem; */
     padding: 5rem;
     background: rgb(255, 215, 221);
     border: 1px solid blue;
+    min-height: 460px;
 }
 
 /* HOME DESIGN */
@@ -94,8 +124,8 @@ section.home, section.about, section.gallery, section.contact {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 9%;
-    max-width: 60rem;
     /* border: 1px solid blue; */
     flex-direction: column;
 }
@@ -119,7 +149,6 @@ section.home, section.about, section.gallery, section.contact {
 
 .bg-text {
     color: brown;
-    padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,20 +156,19 @@ section.home, section.about, section.gallery, section.contact {
     align-items: center;
 
     top: 20%;
-    width: 100%;
+    width: 50%;
     height: 80%;
     border: 1px solid blue;
     position: relative;
 
-    padding: 50px;
 }
 
 .btn-box {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
     height: 5rem;
+    border: 1px solid blue;
 }
 
 .btn-box .btn {
@@ -183,15 +211,16 @@ section.home, section.about, section.gallery, section.contact {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     gap: 10rem;
+    margin: auto;
 }
 
 .about-img {
     position: relative;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     width: 70rem;
     height: 100%;
     margin: 15px 0 0 0px;
@@ -211,7 +240,7 @@ section.home, section.about, section.gallery, section.contact {
     padding: 20px;
     margin: 15px 0 0 0px;
     background: rgb(255, 202, 211);
-    /* border: 1px solid black; */
+    border: 1px solid black;
     border-radius: 5%;
 }
 
