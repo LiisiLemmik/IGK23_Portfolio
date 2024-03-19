@@ -18,7 +18,7 @@ html {
 }
 
 body {
- overflow-x: auto;
+    overflow-x:hidden;
 }
 
 section.header {
@@ -77,13 +77,10 @@ section.header {
     margin-left: 45rem;
 }
 
-section.header
-
 section.home, section.about, section.gallery, section.contact {
     margin: auto;
     width: 100%;
     position: relative;
-    min-height: 1vh;
     /* padding: 10rem 9% 2rem; */
     padding: 5rem;
     background: rgb(255, 215, 221);
@@ -125,16 +122,17 @@ section.home, section.about, section.gallery, section.contact {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     align-items: center;
 
     top: 20%;
     width: 100%;
     height: 80%;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     position: relative;
 
-    padding: 200px 100px 100px 100px;
+    padding: 50px;
 }
 
 .btn-box {
