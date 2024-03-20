@@ -1,3 +1,11 @@
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = decument.querySelector('.navbar');
+
+menuIcon.onclock = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active')
+}
+
 window.onload = function(){
     const initSlider = () => {
         const imageList = document.querySelector(".slider-wrapper .image-list");

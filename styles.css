@@ -17,14 +17,14 @@ html {
     overflow-x: hidden;
 }
 
-/* body { 
-    overflow-x:hidden;
-}*/
+body { 
+    overflow-x: clip;
+}
 
 section.header {
     margin: auto;
     position: relative;
-    height: 130px;
+    height: 115px;
     border: 1px solid red;
     
     display: flex;
@@ -33,9 +33,10 @@ section.header {
     align-self: start;
 
     position: sticky;
+    overflow-y: visible;
     top: 0;
     right: 0;
-    width: 0;
+    width: 100%;
     z-index: 10;
     padding: 10px 300px; /* change header top and bottom blank area */
 
@@ -72,40 +73,42 @@ section.header {
 #menu-icon {
     font-size: 3.5rem;
     cursor: pointer;
-    color: #fff;
+    color: pink;
     display: none;
-    margin-left: 45rem;
+    align-self: center;
+    justify-content: center;
 }
 
 section.Home {
     position: absolute;
     height: 460px;
-    border: 1px solid maroon;
+    /* border: 1px solid maroon; */
     justify-items: center;
-    margin-top: -270px;
+    margin-top: -280px;
     z-index: 50;
 }
 
 section.About {
     position: absolute;
     height: 460px;
-    margin-top: 660px;
-    border: 1px solid maroon;
+    margin-top: 700px;
+    /* border: 1px solid maroon; */
     z-index: 50;
 }
 
 section.Gallery {
     position: absolute;
     height: 460px;
-    margin-top: 1712px;
-    border: 1px solid maroon;
+    margin-top: 1742px;
+    /* border: 1px solid maroon; */
     z-index: 50;
 }
 
 section.Contact {
     position: absolute;
     height: 460px;
-    margin-top: 5910px;
+    margin-top: 5940px;
+    /* border: 1px solid maroon; */
 }
 
 section.home, section.about, section.gallery, section.contact {
@@ -114,7 +117,7 @@ section.home, section.about, section.gallery, section.contact {
     padding: 5rem;
     background: rgb(255, 215, 221);
     border: 1px solid blue;
-    min-height: 460px;
+    min-height: 470px;
 }
 
 /* HOME DESIGN */
@@ -148,6 +151,7 @@ section.home, section.about, section.gallery, section.contact {
 }
 
 .bg-text {
+
     color: brown;
     display: flex;
     flex-direction: column;
@@ -588,11 +592,12 @@ width: 100%;
 .footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     flex-wrap: wrap;
-    padding: 2rem 9%;
+    padding: .5rem 9%;
     background: rgb(255, 96, 122);
-    z-index: 1;
+    z-index: 10;
+    position: sticky;
 }
 
 .footer-iconTop a {
@@ -694,7 +699,7 @@ h2 {
 
     .home {
         padding: 0 4%;
-        width: 50%;
+        width: 100%;
     }
 
     .footer {
@@ -706,20 +711,31 @@ h2 {
 
     .header {
         background: pink;
+        position: sticky;
+        justify-content: space-between;
+    }
+
+    .logo {
+        align-content: center;
+        justify-content: center;
+        border: 1px solid blue;
+        margin-left: -500px;
+        margin-top: 5px;
     }
 
     #menu-icon {
-        position: fixed;
+        position: sticky;
         display: block;
         border: 1px solid black;
-        margin-right: 20%;
+        margin-right: -70px;
+        margin-top: -200px;
     }
 
     .navbar {
         
         position: absolute;
         top: 100%;
-        left: 0;
+        left: -100%;
         width: 30%;
         margin: auto;
         padding: 1rem 4%;
@@ -728,11 +744,37 @@ h2 {
         flex: auto;
         flex-direction: column;
         align-items: end;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar .active {
+        left: 0;
+        transition-delay: 0s;
     }
 
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+    }
+
+    .bg-text {
+        width: 20%;
+    }
+    
+    .about {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-img {
+        width: 70%;
+        align-self: center;
+    }
+
+    .about-content {
+        width: auto;
+        border-radius: 20px;
     }
 }
